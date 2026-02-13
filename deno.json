@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "mollitia": "npm:mollitia@^0.2.0",
+    "vscode-languageserver": "npm:vscode-languageserver@^9.0.1",
+    "vscode-languageserver-textdocument": "npm:vscode-languageserver-textdocument@^1.0.12"
+  }
+}
