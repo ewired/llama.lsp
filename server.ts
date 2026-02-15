@@ -26,8 +26,8 @@ interface ServerSettings {
   topK: number;
   topP: number;
   debounceMs: number;
-  t_max_prompt_ms: number;
-  t_max_predict_ms: number;
+  tMaxPromptMs: number;
+  tMaxPredictMs: number;
 }
 
 interface ExtraContext {
@@ -64,8 +64,8 @@ const defaultSettings: ServerSettings = {
   topK: 40,
   topP: 0.90,
   debounceMs: DEFAULT_DEBOUNCE_MS,
-  t_max_prompt_ms: 500,
-  t_max_predict_ms: 1000,
+  tMaxPromptMs: 500,
+  tMaxPredictMs: 1000,
 };
 
 const CONFIG_SECTION = "llamaLsp";
@@ -246,8 +246,8 @@ function buildInfillRequest(
     samplers: ["top_k", "top_p", "infill"],
     stream: false,
     cache_prompt: true,
-    t_max_prompt_ms: settings.t_max_prompt_ms,
-    t_max_predict_ms: settings.t_max_predict_ms,
+    t_max_prompt_ms: settings.tMaxPromptMs,
+    t_max_predict_ms: settings.tMaxPredictMs,
     response_fields: ["content"],
   };
 }

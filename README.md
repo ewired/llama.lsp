@@ -14,8 +14,8 @@ All settings must be nested under the `llamaLsp` section (camelCase).
 - `topK` (default: `40`)
 - `topP` (default: `0.90`)
 - `debounceMs` (default: `150`)
-- `t_max_prompt_ms` (default: `500`)
-- `t_max_predict_ms` (default: `1000`)
+- `tMaxPromptMs` (default: `500`)
+- `tMaxPredictMs` (default: `1000`)
 
 ## Helix
 
